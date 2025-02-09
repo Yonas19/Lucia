@@ -8,6 +8,13 @@ import d from "././Images/3b.jfif";
 import e from "././Images/wavy.webp";
 import f from "././Images/2c.jfif";
 
+import g from "././Images/darkcover.jfif";
+import h from "././Images/acne.jfif";
+import i from "././Images/dot.jfif";
+import j from "././Images/com.jfif";
+import k from "././Images/dskin.jfif";
+import l from "././Images/dry2.jpg";
+
 const Paywall = () => {
   const navigate = useNavigate();
 
@@ -34,6 +41,16 @@ const Paywall = () => {
       </div>
 
       <h3>Skin types</h3>
+      <div className="marquee2">
+        <div className="marquee-content2">
+          <img src={g} alt="" />
+          <img src={h} alt="" />
+          <img src={i} alt="" />
+          <img src={j} alt="" />
+          <img src={k} alt="" />
+          <img src={l} />
+        </div>
+      </div>
 
       <button onClick={handlePayment}>Choose for your skin or hair</button>
     </div>
