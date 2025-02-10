@@ -1,4 +1,4 @@
-.paywall-bg{
+.paywall-bg {
   background-color: black;
   font-family: inherit;
   margin: 0;
@@ -7,7 +7,8 @@
   color: white;
   overflow: hidden;
 }
-.marquee, .marquee2 {
+.marquee,
+.marquee2 {
   display: flex;
   gap: 20px;
   width: 100%;
@@ -16,38 +17,86 @@
   position: relative;
 }
 
-.marquee-content , .marquee-content2 {
+.marquee-content,
+.marquee-content2 {
   display: flex;
   gap: 80px;
   animation: marquee 10s linear infinite;
 }
-.marquee-content img , .marquee-content2 {
+.marquee-content img,
+.marquee-content2 {
   display: flex;
   gap: 80px;
   animation: marquee 20s linear infinite;
 }
 
-.marquee-content img , .marquee-content2 img {
+.marquee-content img,
+.marquee-content2 img {
   width: 200px;
-  height:150px;
+  height: 150px;
 }
 
 @keyframes marquee {
   from {
-      transform: translateX(30%);
+    transform: translateX(30%);
   }
   to {
-      transform: translateX(-30%);
+    transform: translateX(-30%);
   }
 }
 
 /* Responsive for smaller screens */
-@media (max-width: 600px) {
-  .marquee-content img , .marquee-content2 img {
-      width: 100px; /* Smaller images for mobile */
-      height: 100px;
+
+.paywall-title{
+  display: flex;
+  justify-self: center;
+}
+.pay-btn {
+  display: flex;
+  justify-self: center;
+  padding: 30px 70px;
+  margin-top: 5%;
+  background-color: rgb(126, 40, 206);
+  color: white;
+  font-family:inherit;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 25px;
+  box-shadow: -1px 1px 120px gray;
+  animation: shadowPulse 4s infinite alternate;
+  cursor: pointer;
+}
+
+.pay-btn:hover{
+  transform: translateY(5%);
+  transition: 1s;
+}
+@keyframes shadowPulse {
+  from {
+    box-shadow: 0px 0px 100px rgb(197, 89, 251);
+
   }
-  .marquee-content, .marquee-content2 {
-      animation-duration: 5s; /* Slightly faster on mobile */
+  to {
+    box-shadow: 0px 0px 10px rgb(207, 161, 231);
+
+  }
+}
+
+
+@media (max-width: 600px) {
+  .marquee-content img,
+  .marquee-content2 img {
+    width: 100px; /* Smaller images for mobile */
+    height: 100px;
+  }
+  .marquee-content,
+  .marquee-content2 {
+    animation-duration: 5s; /* Slightly faster on mobile */
+  }
+  .pay-btn{
+    margin-top: 50%;
+    padding: 20px 40px;
+  
+
   }
 }

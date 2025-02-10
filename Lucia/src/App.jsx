@@ -10,7 +10,7 @@ const App = () => {
     <div className="container">
       <SignedIn>
         <nav className="navbar">
-          <UserButton afterSignOutUrl="/" />
+          
         </nav>
       </SignedIn>
 

@@ -26,7 +26,7 @@ const Paywall = () => {
 
   return (
     <div className="paywall-bg">
-      <h1>Lucia</h1>
+      <h1 className="paywall-title">Lucia</h1>
       <h4>በፀጉሮ ወይም በቆዳዎ ላይ ለውጥ ማየት አቅቶል ???</h4>
       <h3>Hair type</h3>
       <div className="marquee">
@@ -52,7 +52,9 @@ const Paywall = () => {
         </div>
       </div>
 
-      <button onClick={handlePayment}>Choose for your skin or hair</button>
+      <button className="pay-btn" onClick={handlePayment}>
+        Choose for your skin or hair
+      </button>
     </div>
   );
 };
